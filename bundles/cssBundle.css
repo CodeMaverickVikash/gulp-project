@@ -1,3 +1,0 @@
-.main{border:3px solid green;padding:10px;text-align:center}.main,.main #show-count{margin:auto;width:50%}
-.overlay-loader{position:absolute;top:0;bottom:0;left:0;right:0;background:#000;z-index:5;display:flex;justify-content:center;align-items:center;color:#fff}@media (max-width:400px){.overlay-loader{text-align:center}.overlay-loader>i{position:absolute;top:33%}}.overlay-loader .loading-container{padding:12px}
-/*# sourceMappingURL=cssBundle.css.map */

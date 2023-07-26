@@ -1,3 +1,0 @@
-const addCountBtn=document.querySelector("#add-count"),removeCountBtn=document.querySelector("#remove-count"),showCountContainer=document.querySelector("#show-count");let number=0;function plusNumber(){number>10||(number+=1,showCount(number))}function minusNumber(){number<0||(number-=1,showCount(number))}function showCount(n){showCountContainer.innerHTML=`<p>${n}</p>`}showCount(number),addCountBtn.addEventListener("click",plusNumber),removeCountBtn.addEventListener("click",minusNumber);
-function upload(){let o=o();o&&doUpload()}let doUpload=function(){},isUpload=()=>!0;
-//# sourceMappingURL=jsBundle.js.map
