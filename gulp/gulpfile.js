@@ -43,7 +43,7 @@ gulp.task('jsBuild', function(){
     return tempTask.pipe(gulp.dest(dest));
 })
 
-gulp.task('copyStatic', function(){
+gulp.task('withoutDevFlag', function(){
     return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat("copyStatic" + '.css'))
@@ -53,4 +53,4 @@ gulp.task('copyStatic', function(){
 const taskList = ['styles', 'jsBuild'];
 gulp.task('default', gulp.series([
 	gulp.parallel(taskList)
-].concat(options.has('dev') ? [] : ['copyStatic'])));
+].concat(options.has('dev') ? [] : ['withoutDevFlag'])));
