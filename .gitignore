@@ -1,0 +1,5 @@
+# dependencies
+/gulp/node_modules
+
+# production
+/bundles
